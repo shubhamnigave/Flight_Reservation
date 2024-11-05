@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Search Flight</title>
+    <style>
+        /* Background gradient */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        /* Form container styling */
+        .search-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 320px;
+            text-align: center;
+        }
+
+        /* Form title */
+        .search-container h1 {
+            font-size: 1.5rem;
+            color: #6a11cb;
+            margin-bottom: 10px;
+        }
+
+        /* Greeting text */
+        .search-container h2 {
+            font-size: 1rem;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        /* Input fields styling */
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #5b0faf;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Flight Search Form</h1>
+       <!--  <h2>Hello</h2> -->
+
+        <form action="search" method="post">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" required />
+
+            <label for="to">To</label>
+            <input type="text" id="to" name="to" required />
+
+            <label for="ddate">Departure Date</label>
+            <input type="date" id="ddate" name="ddate" required />
+
+            <input type="submit" value="Search" />
+        </form>
+    </div>
+</body>
+</html>

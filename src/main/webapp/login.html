@@ -1,0 +1,149 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+    <style>
+        /* Set background for the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        /* Center the form with styles */
+        form {
+        	display:flex;
+        	flex-direction: column;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Style the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Style the table cells */
+        td {
+            padding: 10px;
+            color: #333;
+        }
+
+        /* Style the input fields */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Style the submit button */
+        #btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a11cb;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for submit button */
+        #btn:hover {
+            background-color: #2575fc;
+        }
+        /*register button*/
+        #btn2 {
+        
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #6a11cb;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+		#btn2 a{
+		 	display: flex;
+            justify-content: center;
+            align-items: center; 
+			padding: 10px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+           	text-align: center; 
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+		}
+        /* Hover effect for submit button */
+        #btn2:hover {
+            background-color: #2575fc;
+        }
+
+        /* Style the form title */
+        h2 {
+            text-align: center;
+            color: #6a11cb;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="login" method="post">
+        <h2>Airline Reservation Login</h2>
+        <table>
+            <tr>
+                <td>Enter User Email</td>
+                <td><input type="email" name="em" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password" name="pass" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input id="btn" type="submit" value="Login" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                	<div id="btn2">
+                    	<a href='register.html'>Register</a>
+                	</div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+  

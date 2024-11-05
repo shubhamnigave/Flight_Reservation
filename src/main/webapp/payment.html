@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #333;
+        }
+
+        .card-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 30px 40px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .card-form h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #6a11cb;
+            margin-bottom: 20px;
+        }
+
+        .card-form label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .card-form input[type="text"],
+        .card-form input[type="number"],
+        .card-form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .card-form button {
+            padding: 12px;
+            width: 100%;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-form button:hover {
+            background-color: #5b0faf;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-form">
+        <h3>Enter Card Details</h3>
+        <form action="payment" method="post">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="exp-date">Expiry Date</label>
+            <input type="date" id="exp-date" name="exp-date" required>
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" required>
+
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+</body>
+</html>
